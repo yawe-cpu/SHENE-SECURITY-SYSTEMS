@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shen Security Systems - CCTV, alarms, access control, installation and maintenance in Kampala, Uganda.">
+<title>Contact | Shen Security Systems</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Professional CCTV & Security Solutions • Kampala, Uganda</span><span>Call / WhatsApp: +256 757 384 732</span></div></div>
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">
+      <div class="logo-mark">S</div>
+      <div>SHEN <strong>SECURITY</strong> SYSTEMS</div>
+    </a>
+    <nav>
+      <ul>
+        <li><a class="" href="index.html">Home</a></li>
+        <li><a class="" href="services.html">Services</a></li>
+        <li><a class="active" href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="https://wa.me/256757384732?text=Hello%20Shen%20Security%20Systems%2C%20I%20would%20like%20a%20security%20quotation.">WhatsApp Us</a>
+  </div>
+</header>
+
+<main>
+<section class="page-hero"><div class="container"><div class="kicker">Talk to Shen</div><h1>Contact Us</h1><p>Get a quotation, book installation or request maintenance support.</p></div></section>
+<section class="section">
+<div class="container contact-grid">
+<div class="contact-box">
+<h2>Shen Security Systems</h2>
+<p style="color:var(--muted);margin:8px 0 18px">We are available for CCTV installation, maintenance and integrated security solutions.</p>
+<div class="contact-item"><div class="contact-icon">⌖</div><div><h3>Location</h3><p>Kampala Road, Johnson Street<br>Shop G12, London Chambers, Kampala</p></div></div>
+<div class="contact-item"><div class="contact-icon">☎</div><div><h3>Call / WhatsApp</h3><p><a href="https://wa.me/256757384732">+256 757 384 732</a><br><a href="https://wa.me/256767222966">+256 767 222 966</a><br><a href="https://wa.me/256706837937">+256 706 837 937</a></p></div></div>
+<div class="contact-item"><div class="contact-icon">✉</div><div><h3>Email</h3><p><a href="mailto:shensecusys256@gmail.com">shensecusys256@gmail.com</a></p></div></div>
+<div class="contact-item"><div class="contact-icon">✓</div><div><h3>Quick WhatsApp</h3><p>Tap any WhatsApp number to start a chat directly without saving the number first.</p></div></div>
+</div>
+<div class="form-box">
+<h2>Request a quotation</h2>
+<p style="color:var(--muted);margin:7px 0 20px">Fill in the details below. The button will open WhatsApp with your message.</p>
+<form onsubmit="sendQuote(event)">
+<label for="name">Your name</label>
+<input id="name" required placeholder="Enter your name">
+<label for="service">Service needed</label>
+<select id="service" required>
+<option value="">Select a service</option>
+<option>CCTV installation</option><option>CCTV maintenance</option><option>Alarm system</option><option>Access control</option><option>Perimeter security</option><option>Other security system</option>
+</select>
+<label for="message">Message</label>
+<textarea id="message" required placeholder="Tell us what you want to secure..."></textarea>
+<button class="btn btn-primary" type="submit">Send on WhatsApp</button>
+</form>
+</div>
+</div>
+</section>
+<section class="section" style="background:#fff">
+<div class="container">
+<div class="section-head"><div class="kicker">Why choose us</div><h2>Professional service from start to finish</h2></div>
+<div class="faq">
+<div class="card"><h3>Site assessment</h3><p>We consider entrances, blind spots, lighting, power and recording needs before recommending a system.</p></div>
+<div class="card"><h3>Installation & setup</h3><p>We install, configure, test and explain the system so the client can use it confidently.</p></div>
+<div class="card"><h3>Maintenance</h3><p>We support servicing, troubleshooting, repairs and future expansion of existing systems.</p></div>
+<div class="card"><h3>Flexible solutions</h3><p>From a small shop to a larger institution, systems can be designed around the actual site and budget.</p></div>
+</div>
+</div>
+</section>
+</main>
+<script>
+function sendQuote(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value.trim();
+  const service=document.getElementById('service').value;
+  const message=document.getElementById('message').value.trim();
+  const text=`Hello Shen Security Systems. My name is ${name}. I need help with ${service}. ${message}`;
+  window.location.href='https://wa.me/256757384732?text='+encodeURIComponent(text);
+}
+</script>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Shen Security Systems</h3>
+        <p>Professional CCTV cameras, installation, maintenance and integrated security systems for homes, businesses and institutions.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services & Products</a></li><li><a href="contacts.html">Contact Us</a></li></ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Kampala Road, Johnson Street<br>Shop G12, London Chambers</p>
+        <p>+256 757 384 732<br>+256 767 222 966<br>+256 706 837 937</p>
+        <p>shensecusys256@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Shen Security Systems. All rights reserved. • Prices shown are indicative and subject to site survey, equipment availability and quotation.</div>
+  </div>
+</footer>
+</body></html>
